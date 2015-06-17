@@ -72,6 +72,16 @@ optional arguments:
                         set the attachment title
 ```
 
+### Examples
+
+```shell
+$ slack "Hello from the command line"
+$ slack -c \#random "something totally random"
+$ slack -u hamlet "to be or not to be"
+$ slack -e :ghost: "boo!"
+```
+
+
 ## License
 
 [MIT](http://philippbosch.mit-license.org/)
