@@ -4,6 +4,10 @@ slack-webhook-cli
 The easiest way to send messages to a [Slack](https://slack.com/) channel or
 user through an [Incoming Webhook](https://api.slack.com/incoming-webhooks).
 
+## TL;DR
+
+![Screencast](http://c.pb.io/bfr4/slack-webhook-cli-tldr.optim.gif)
+
 
 ## Installation
 
