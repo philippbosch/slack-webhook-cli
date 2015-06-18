@@ -6,8 +6,7 @@ user through an [Incoming Webhook](https://api.slack.com/incoming-webhooks).
 
 ## TL;DR
 
-![Screencast](http://c.pb.io/bfr4/slack-webhook-cli-tldr.optim.gif)
-
+[Watch this video](https://vimeo.com/131061395)
 
 ## Installation
 
