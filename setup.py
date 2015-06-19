@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
 
+version = __import__('slack').get_version()
 
 setup(
     name='slack-webhook-cli',
-    version='0.1',
+    version=version,
     packages=find_packages(),
     install_requires=['requests'],
     author='Philipp Bosch',

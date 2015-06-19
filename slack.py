@@ -11,6 +11,10 @@ import requests
 VERSION = ('0', '1', '0')
 
 
+def get_version():
+    return '.'.join(VERSION)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('text', help='message you want to get delivered. wrap in quotes if it contains spaces.')
