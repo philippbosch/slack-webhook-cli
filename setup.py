@@ -4,6 +4,7 @@ version = __import__('slack').get_version()
 
 setup(
     name='slack-webhook-cli',
+    description='Send messages to Slack from the command line',
     version=version,
     packages=find_packages(),
     install_requires=['requests'],

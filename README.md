@@ -86,6 +86,14 @@ $ slack -u hamlet "to be or not to be"
 $ slack -e :ghost: "boo"
 ```
 
+You can also pass in the message through _stdin_ like this:
+
+```shell
+$ echo Hello there | slack
+$ uptime | slack
+$ slack < /path/to/file.txt
+```
+
 
 ## License
 
