@@ -8,7 +8,7 @@ import sys
 import requests
 
 
-VERSION = ('0', '2', '0')
+VERSION = ('0', '2', '1')
 
 
 def get_version():
@@ -76,7 +76,7 @@ def main():
 
     try:
         res = requests.post(args.webhook_url, data=json.dumps(payload))
-    except Exception, e:
+    except Exception as e:
         sys.stderr.write('An error occurred when trying to deliver the message:\n  {0}'.format(e.message))
         return 2
 
