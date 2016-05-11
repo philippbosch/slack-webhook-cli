@@ -33,7 +33,7 @@ def main():
         sys.stderr.write('No webhook URL given.\nEither use the -w/--webhook-url argument or the SLACK_WEBHOOK_URL environment variable.\n')
         return 1
 
-    if args.text is None and not sys.stdin.isatty():
+    if args.text == '-' and not sys.stdin.isatty():
         args.text = sys.stdin.read()
 
     if args.text is None:
