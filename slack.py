@@ -8,7 +8,7 @@ import sys
 import requests
 
 
-VERSION = ('0', '2', '2')
+VERSION = ('0', '2', '3')
 
 
 def get_version():
