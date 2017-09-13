@@ -8,13 +8,6 @@ import sys
 import requests
 
 
-VERSION = ('0', '2', '3')
-
-
-def get_version():
-    return '.'.join(VERSION)
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('text', nargs='?', help='message you want to get delivered. wrap in quotes if it contains spaces. Use "-" to read from stdin.')

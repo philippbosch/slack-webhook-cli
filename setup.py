@@ -12,10 +12,10 @@ setup(
     author_email='hello@pb.io',
     license='MIT',
     url='https://github.com/philippbosch/slack-webhook-cli',
-    scripts=['slack.py'],
+    scripts=['slack/cli.py'],
     entry_points={
         'console_scripts': [
-            'slack = slack:main'
+            'slack = slack.cli:main'
         ]
     },
 )
