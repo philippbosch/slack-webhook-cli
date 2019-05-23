@@ -19,11 +19,11 @@ def main():
     parser.add_argument('-a', '--attachment', help='send message as a rich attachment', action='store_true', default=False)
     parser.add_argument('-C', '--color', help='set the attachment color')
     parser.add_argument('-t', '--title', help='set the attachment title')
-    parser.add_argument('-n', '--no-post', help='do not post request but just print json body and exit', action='store_true', default=False)
+    parser.add_argument('-d', '--dump-json', help='do not post request but just print json body and exit', action='store_true', default=False)
 
     args = parser.parse_args()
 
-    if args.webhook_url is None and not args.no_post:
+    if args.webhook_url is None and not args.dump_json:
         sys.stderr.write('No webhook URL given.\nEither use the -w/--webhook-url argument or the SLACK_WEBHOOK_URL environment variable.\n')
         return 1
 
@@ -68,7 +68,7 @@ def main():
     elif args.icon_emoji is not None:
         payload['icon_emoji'] = args.icon_emoji
 
-    if args.no_post:
+    if args.dump_json:
         sys.stdout.write('{0}\n'.format(json.dumps(payload)))
         return 0
 
