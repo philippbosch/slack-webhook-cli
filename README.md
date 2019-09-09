@@ -41,7 +41,7 @@ I'll let the script speak for itself:
 $ slack -h
 
 usage: slack [-h] [-w WEBHOOK_URL] [-c CHANNEL] [-u USERNAME] [-i ICON_URL]
-             [-e ICON_EMOJI] [-a] [-C COLOR] [-t TITLE]
+             [-e ICON_EMOJI] [-a] [-C COLOR] [-t TITLE] [-d]
              text
 
 positional arguments:
@@ -75,6 +75,7 @@ optional arguments:
                         set the attachment color
   -t TITLE, --title TITLE
                         set the attachment title
+  -d, --dump-json       do not post request but just print json body and exit
 ```
 
 ### Examples
